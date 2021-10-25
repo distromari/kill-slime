@@ -165,40 +165,6 @@ button:hover {
 
     background-image: url('../img/button-golden-right-hover.png');
 }
-*/
-/**
-* style for checkboxes
-*/
-/* basic checkbox */
-.rpgui-content input[type=checkbox].rpgui-checkbox {
-  display: none; }
-
-.rpgui-content input[type=checkbox].rpgui-checkbox + label {
-  background: url("../img/checkbox-off.png") no-repeat;
-  line-height: 24px;
-  display: inline-block;
-  background-size: auto 100%;
-  padding-left: 34px;
-  height: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-.rpgui-content input[type=checkbox].rpgui-checkbox:checked + label {
-  background: url("../img/checkbox-on.png") no-repeat;
-  line-height: 24px;
-  display: inline-block;
-  background-size: auto 100%;
-  padding-left: 34px;
-  height: 24px; }
-
-/* golden checkbox */
-.rpgui-content input[type=checkbox].rpgui-checkbox.golden + label {
-  background: url("../img/checkbox-golden-off.png") no-repeat;
-  background-size: auto 100%; }
-
-.rpgui-content input[type=checkbox].rpgui-checkbox.golden:checked + label {
-  background: url("../img/checkbox-golden-on.png") no-repeat;
-  background-size: auto 100%; }
 
 /**
 * global content styling
@@ -359,56 +325,6 @@ label {
 .rpgui-content input[type=checkbox].rpgui-checkbox + label {
   cursor: url("../img/cursor/point.png") 10 0, auto; }
 
-/* for input / text selection important */
-/* this rule is for when you specifically request this cursor class */
-.rpgui-cursor-select,
-.rpgui-cursor-select * {
-  cursor: url("../img/cursor/select.png") 10 0, auto !important; }
-
-/* for input / text selection, not important, for all elements that have pointer by-default */
-.rpgui-cursor-select,
-.rpgui-content input,
-.rpgui-content textarea {
-  cursor: url("../img/cursor/select.png") 10 0, auto; }
-
-/* for grabbing stuff */
-/* this rule is for when you specifically request this cursor class */
-.rpgui-cursor-grab-open,
-.rpgui-cursor-grab-open * {
-  cursor: url("../img/cursor/grab-open.png") 10 0, auto !important; }
-
-/* for grabbing stuff */
-/* this rule is for when you specifically request this cursor class */
-.rpgui-cursor-grab-close,
-.rpgui-cursor-grab-close * {
-  cursor: url("../img/cursor/grab-close.png") 10 0, auto !important; }
-
-/**
-* Customized dropdown with rpgui design.
-*/
-/* dropdown box implemented with list (see rpgui-dropdown.js for details) */
-/* note! this class rule affect both the dropdown header and the list elements! */
-.rpgui-dropdown-imp,
-.rpgui-dropdown {
-  /* font */
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  color: white;
-  /* default size */
-  min-height: 40px;
-  margin-top: 0px;
-  /* border */
-  border-style: solid;
-  border-width: 7px 7px 7px 7px;
-  -moz-border-image: url("../img/select-border-image.png") 10% repeat repeat;
-  -webkit-border-image: url("../img/select-border-image.png") 10% repeat repeat;
-  -o-border-image: url("../img/select-border-image.png") 10% repeat repeat;
-  border-image: url("../img/select-border-image.png") 10% repeat repeat;
-  /* background */
-  background: url("../img/select-background-image.png") repeat repeat;
-  background-clip: padding-box;
-  background-origin: padding-box;
-  background-position: center; }
-
 /* dropdown options list */
 ul.rpgui-dropdown-imp {
   padding: 0 0 0 0 !important;
@@ -478,49 +394,16 @@ ul.rpgui-dropdown-imp {
   height: 64px; }
 
 .rpgui-icon.sword {
-  background-image: url("../img/icons/sword.png"); }
+  background-image: url("../img/icons/sword.png"); 
+}
 
 .rpgui-icon.shield {
   background-image: url("../img/icons/shield.png"); }
 
-.rpgui-icon.exclamation {
-  background-image: url("../img/icons/exclamation.png"); }
-
 .rpgui-icon.potion-red {
-  background-image: url("../img/icons/potion-red.png"); }
+  background-image: url("../img/icons/potion-red.png"); 
+}
 
-.rpgui-icon.potion-green {
-  background-image: url("../img/icons/potion-green.png"); }
-
-.rpgui-icon.potion-blue {
-  background-image: url("../img/icons/potion-blue.png"); }
-
-.rpgui-icon.weapon-slot {
-  background-image: url("../img/icons/weapon-slot.png"); }
-
-.rpgui-icon.shield-slot {
-  background-image: url("../img/icons/shield-slot.png"); }
-
-.rpgui-icon.armor-slot {
-  background-image: url("../img/icons/armor-slot.png"); }
-
-.rpgui-icon.helmet-slot {
-  background-image: url("../img/icons/helmet-slot.png"); }
-
-.rpgui-icon.ring-slot {
-  background-image: url("../img/icons/ring-slot.png"); }
-
-.rpgui-icon.potion-slot {
-  background-image: url("../img/icons/potion-slot.png"); }
-
-.rpgui-icon.magic-slot {
-  background-image: url("../img/icons/magic-slot.png"); }
-
-.rpgui-icon.shoes-slot {
-  background-image: url("../img/icons/shoes-slot.png"); }
-
-.rpgui-icon.empty-slot {
-  background-image: url("../img/icons/empty-slot.png"); }
 
 /**
 * input styling
@@ -791,69 +674,6 @@ ul.rpgui-list-imp {
 /* progress bar - red color */
 .rpgui-progress-fill.red {
   background-image: url("../img/progress-red.png"); }
-
-/**
-* style for radioes
-*/
-/* radio box */
-.rpgui-content input[type=radio].rpgui-radio {
-  display: none; }
-
-.rpgui-content input[type=radio].rpgui-radio + label {
-  background: url("../img/radio-off.png") no-repeat;
-  line-height: 24px;
-  display: inline-block;
-  background-size: auto 100%;
-  padding-left: 34px;
-  height: 24px;
-  margin-top: 8px;
-  margin-bottom: 8px; }
-
-.rpgui-content input[type=radio].rpgui-radio:checked + label {
-  background: url("../img/radio-on.png") no-repeat;
-  line-height: 24px;
-  display: inline-block;
-  background-size: auto 100%;
-  padding-left: 34px;
-  height: 24px; }
-
-/* golden radio */
-.rpgui-content .rpgui-radio.golden + label {
-  background: url("../img/radio-golden-off.png") no-repeat !important;
-  background-size: auto 100% !important; }
-
-.rpgui-content .rpgui-radio.golden:checked + label {
-  background: url("../img/radio-golden-on.png") no-repeat !important;
-  background-size: auto 100% !important; }
-
-/**
-* Rules for misc and general things.
-*/
-/* set scrollbars for webkit browsers (like chrome) */
-.rpgui-content ::-webkit-scrollbar,
-.rpgui-content::-webkit-scrollbar {
-  width: 18px; }
-
-/* Track */
-.rpgui-content ::-webkit-scrollbar-track,
-.rpgui-content::-webkit-scrollbar-track {
-  background-image: url("../img/scrollbar-track.png");
-  background-size: 18px 60px;
-  background-repeat: repeat-y; }
-
-/* Handle */
-.rpgui-content ::-webkit-scrollbar-thumb,
-.rpgui-content::-webkit-scrollbar-thumb {
-  background-image: url("../img/scrollbar-thumb.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; }
-
-/* buttons */
-.rpgui-content ::-webkit-scrollbar-button,
-.rpgui-content::-webkit-scrollbar-button {
-  background-image: url("../img/scrollbar-button.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; }
 
 /**
 * for disabled elements
