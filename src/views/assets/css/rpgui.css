@@ -1,18 +1,12 @@
-/*
-Import the font stylesheet.
-If not supported you can add backup via:
-<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
-inside your html file.
-*/
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-/**
-* Customized scrollbars
-*/
-/* to get pixelated images (nearest-neighbor filter) on all  browsers */
 
 * {
   font-family: 'Press Start 2P', cursive;
   cursor: url("../img/cursor/default.png"), auto !important;
+}
+
+button:hover {
+  cursor: url("../img/cursor/point.png"), auto !important;
 }
 
 .rpgui-pixelated {
@@ -23,6 +17,8 @@ inside your html file.
   image-rendering: -o-crisp-edges;
   image-rendering: pixelated;
   font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
 }
 
 /* unselectable text */
@@ -80,10 +76,9 @@ inside your html file.
   display: inline-block;
   /* padding */
   padding-left: 35px;
-  padding-right: 35px; }
+  padding-right: 35px; 
+}
 
-/* button hover */
-.rpgui-button.hover,
 .rpgui-button:hover {
   background-image: url("../img/button-hover.png"); }
 
@@ -251,7 +246,6 @@ inside your html file.
 /* game div without background image*/
 .rpgui-container {
   /* position style and default z */
-  position: fixed;
   z-index: 10;
   overflow: show; 
 }
@@ -295,7 +289,8 @@ inside your html file.
   background: url("../img/background-image-golden.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
-  background-position: center; }
+  background-position: center; 
+}
 
 /* game div with golden2 background image*/
 .rpgui-container.framed-golden-2 {
@@ -765,24 +760,25 @@ ul.rpgui-list-imp {
 
 /* progress bar background track */
 .rpgui-progress-track {
-  position: absolute;
-  height: 42px;
-  left: 40px;
-  right: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   background-image: url("../img/progress-bar-track.png");
   background-repeat: repeat-x;
-  background-size: 36px 100%; }
+  background-size: 36px 100%; 
+}
 
 /* progress bar - the fill itself */
 .rpgui-progress-fill {
-  position: absolute;
-  top: 9px;
-  bottom: 8px;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
   width: 100%;
   background-image: url("../img/progress.png");
   background-repeat: repeat-x;
-  background-size: 36px 100%; }
+  background-size: 36px 100%; 
+}
 
 /* progress bar - blue color */
 .rpgui-progress-fill.blue {
